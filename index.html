@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Wiki</title>
+  </head>
+  <body>
+    <div class="cointainer">
+      <h1 class="tittle">Conceptos</h1>
+    </div>
+
+    <div class="text-center">
+      <div class="main">
+        <div class="first">
+          <div class="pilas">
+            <h2>Las pilas</h2>
+            <br />
+            <p class="less">
+              Las pilas son patrones que se utilizan para almacenar datos, a
+              diferencia de las colas, en este caso lo ultimo que se ingresa es
+              lo primero en salir (LIFO - Last In First Out)
+            </p>
+            <br />
+
+            <div class="mini-container">
+              <div class="first-time">
+                <h3>Ejemplo:</h3>
+                <br />
+                <p>
+                  En el siguinete codigo podemos ver como es el uso normal de
+                  una pila y como podemos eliminar sus datos.
+                </p>
+                <br />
+                <div class="images">
+                  <img
+                    class="picture-large"
+                    src="https://i0.wp.com/somoshackersdelaprogramacion.es/wp-content/uploads/2022/05/stack.webp?resize=768%2C455&ssl=1"
+                    alt=""
+                  />
+                  <div class="two-images">
+                    <img
+                      class="picture2"
+                      src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Pila.svg"
+                      alt=""
+                    />
+
+                    <img
+                      class="picture3"
+                      src="https://technodyan.com/wp-content/uploads/2017/10/diagrama-pila-234x300.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="second">
+          <div class="code">
+            <p>
+              print("Creamos una pila con datos")<br />
+              pila = [1,2,3,4,5,6,7,8,9,10,11]<br />
+              print(pila)<br />
+              <br />
+              print("Tambien podemos crear una pila vacia")<br />
+              pila2 = []<br />
+              print(pila2)<br />
+              <br />
+              print("Agregamos datos a la pila vacia por medio de .append()")<br />
+              pila2.append(1)<br />
+              pila2.append(8)<br />
+              pila2.append(9)<br />
+              pila2.append(4)<br />
+              pila2.append(5)<br />
+              pila2.append(10)<br />
+
+              print(pila2)<br />
+              <br />
+              print("Eliminamos el último dato ingresado a la pila con
+              .pop()")<br />
+              pila2.pop()<br />
+              print(pila2)<br />
+              <br />
+              print("Eliminamos todos los datos de la pila con .clear()")<br />
+              pila2.clear()<br />
+              print(pila2)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <div class="main">
+        <div class="first">
+          <h2>Las colas</h2>
+          <br />
+          <p>
+            Las colas son patrones que se utilizan para almacenar datos, y al
+            contrario de las pilas, las colas te muestran como primer dato el
+            primero en ser agregado (FIFO - First In First Out).
+          </p>
+          <br />
+          <div class="mini-container">
+            <div class="first-time">
+              <h3>Ejemplo:</h3>
+              <br />
+              <p>
+                En el siguinete codigo podemos ver como es el uso normal de una
+                cola y como podemos agregar y eliminar sus datos.
+              </p>
+              <br />
+              <div class="images">
+                <img
+                  class="picture-large"
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Cola.svg"
+                  alt=""
+                />
+                <div>
+                  <img
+                    class="picture-large"
+                    src="http://4.bp.blogspot.com/-E-e0IcKhM-w/VkwjJejIWMI/AAAAAAAAATE/hOsUqoaXsvg/s1600/colas.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="second">
+          <div class="code">
+            <p>
+              print("Para crear una cola, primero debemos importar la clase
+              deque()")<br />
+              <br />
+              from collections import deque<br />
+              <br />
+              print("Creamos una cola")<br />
+              cola = deque([1,2,3,4,5,6,7,8])<br />
+              print(cola)<br />
+              <br />
+              print("Tambien podemos crear una cola vacia")<br />
+              cola2 = deque()<br />
+              print(cola2)<br />
+              <br />
+              print("Para agregar elementos, usamos .append()")<br />
+              cola2.append(9)<br />
+              cola2.append(10)<br />
+              cola2.append(11)<br />
+              print(cola2)<br />
+              <br />
+              print("Para eliminar elemento como una cola, usamos
+              .popleft()")<br />
+              cola2.popleft()<br />
+              print(cola2)<br />
+              <br />
+              print("Para vaciar la cola, podemos usar .clear()")<br />
+              cola2.clear()<br />
+              print(cola2)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <div class="main">
+        <div class="first">
+          <div class="pilas">
+            <h2>Los arboles</h2>
+            <br />
+            <p>
+              Las colas son patrones que se utilizan para almacenar datos, y al
+              contrario de las pilas, las colas te muestran como primer dato el
+              primero en ser agregado (FIFO - First In First Out).
+            </p>
+            <br />
+            <div class="mini-container">
+              <div class="first-time">
+                <h3>Ejemplo:</h3>
+                <br />
+                <p>
+                  Tenemos un arbol que tiene numeros pares del lado izquierdo y
+                  numeros impares del lado derecho, tomaremos el numero como tal
+                  para organizarlo por orden y le sacaremos el modulo para
+                  ponerlo del lado izquierdo o derecho.
+                </p>
+                <br />
+                <div class="images">
+                  <img
+                    class="picture-large"
+                    src="https://runestone.academy/ns/books/published/pythoned/_images/heapOrder.png"
+                    alt=""
+                  />
+                  <div class="two-images">
+                    <img
+                      class="picture2"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/280px-Binary_search_tree.svg.png"
+                      alt=""
+                    />
+
+                    <img
+                      class="picture3"
+                      src="https://www.ciberaula.com/cursos/java/assets/img/edarbol.gif"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="second">
+          <div class="code">
+            <p>
+              class Nodo:<br />
+              &nbsp;def __init__(self, valor):<br />
+              &nbsp;&nbsp; self.valor = valor<br />
+              <br />
+              &nbsp;self.izquierda = None<br />
+              &nbsp;self.derecha = None<br />
+              <br />
+              class Arbol:<br />
+              &nbsp;def __init__(self):<br />
+              &nbsp;&nbsp;self.raiz = None<br />
+              <br />
+              &nbsp;def insertar(self, valor):<br />
+              &nbsp;&nbsp;if self.raiz is None:<br />
+              &nbsp;&nbsp;&nbsp;self.raiz = Nodo(valor)<br />
+              &nbsp;&nbsp;&nbsp;print("El dato padre es ", valor)<br />
+              &nbsp;&nbsp;else:<br />
+              &nbsp;&nbsp;&nbsp;self._insertar_recursivo (valor, self.raiz)<br />
+              <br />
+              &nbsp;def _insertar_recursivo(self, valor, nodo_actual):<br />
+              &nbsp;&nbsp;modulo = nodo_actual.valor % 2<br />
+              &nbsp;&nbsp;if valor is not None:<br />
+              &nbsp;&nbsp;&nbsp;if modulo == 0:<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;if nodo_actual.izquierda is None:<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nodo_actual.izquierda =
+              Nodo(valor)<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;else:<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._insertar_recursivo (valor,
+              nodo_actual.izquierda)<br />
+              &nbsp;&nbsp;&nbsp;else:<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;if nodo_actual.derecha is None:<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nodo_actual.derecha = Nodo(valor)<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;else:<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._insertar_recursivo (valor,
+              nodo_actual.derecha)<br />
+              <br />
+              &nbsp;def imprimir(self):<br />
+              &nbsp;&nbsp;if self.raiz is not None:<br />
+              &nbsp;&nbsp;&nbsp;self._imprimir_recursivo (self.raiz)<br />
+              <br />
+              &nbsp;def _imprimir_recursivo (self, nodo_actual):<br />
+              &nbsp;&nbsp;if nodo_actual is not None:<br />
+              &nbsp;&nbsp;&nbsp;modulo = nodo_actual.valor % 2<br />
+              &nbsp;&nbsp;&nbsp;self._imprimir_recursivo
+              (nodo_actual.izquierda)<br />
+              &nbsp;&nbsp;&nbsp;if modulo == 0:<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;print("El valor", nodo_actual.valor, "es
+              par y esta al lado izquierdo")<br />
+              &nbsp;&nbsp;&nbsp;else:<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;print("El valor", nodo_actual.valor, "es
+              impar y esta al lado derecho")<br />
+              &nbsp;&nbsp;&nbsp;self._imprimir_recursivo
+              (nodo_actual.derecha)<br />
+              <br />
+              arbol.insertar(2) arbol.insertar(4) arbol.insertar(7)<br />
+              arbol.insertar(9) arbol.insertar(5) arbol.insertar(3)<br />
+              arbol.insertar(6) arbol.insertar(1) arbol.imprimir()<br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <div class="main">
+        <div class="first">
+          <div class="pilas">
+            <h2>Los grafos</h2>
+            <br />
+            <p>
+              Los grafos son modelos gráficos que permiten representar las
+              relaciones entre los datos o vectores que hay en el. Con ellos
+              podemos identificar culaes son las rutas más cortas, mas largas o
+              cuales tienen especificaciones determinadas.
+            </p>
+            <br />
+            <div class="mini-container">
+              <div class="first-time">
+                <h3>Ejemplo:</h3>
+                <br />
+                <p>
+                  El siguiente codigo es de una estructura de un grafo que
+                  permite navegar entre los departamentos presentados
+                  mostrandonos cual es el recorrido de uno a otro, en donde se
+                  atraviesen menos departamentos
+                </p>
+                <br />
+                <div class="images">
+                  <img
+                    class="picture-large"
+                    src="https://4.bp.blogspot.com/-kDoun4SlO9c/WCXJWtqRRBI/AAAAAAAAADA/ivcTlsIfv6QJROQMIbxUubsGgfn85yw1QCEw/s1600/Grafo+dirigido.png"
+                    alt=""
+                  />
+                  <div class="two-images">
+                    <img
+                      class="picture2"
+                      src="https://marzomates.webs.ull.es/wp-content/uploads/2020/12/telefon-1024x695.png"
+                      alt=""
+                    />
+
+                    <img
+                      class="picture3"
+                      src="https://tareaeducativa.com/wp-content/uploads/2020/02/350px-Complete-edge-coloring.svg.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="second">
+          <div class="code">
+            <p>
+              import networkx as nx<br />
+              import pandas as pd<br />
+              import warnings<br />
+              import matplotlib.pyplot as plt<br />
+              <br />
+              G = nx.Graph()<br />
+              G.add_nodes_from(["Risaralda", "Antioquia", "Santander", "Boyaca",
+              "Valle", "Cauca", "Caldas", "Cundinamarca", "Quindio", "Tolima",
+              "Huila"])<br />
+              fig, ax = plt.subplots(figsize=(5, 5))<br />
+              <br />
+              G.add_edge("Risaralda","Antioquia")<br />
+              G.add_edge("Risaralda","Caldas")<br />
+              G.add_edge("Risaralda","Quindio")<br />
+              G.add_edge("Risaralda","Tolima")<br />
+              G.add_edge("Risaralda","Valle")<br />
+              G.add_edge("Antioquia", "Boyaca")<br />
+              G.add_edge("Antioquia", "Cundinamarca")<br />
+              G.add_edge("Antioquia", "Caldas")<br />
+              G.add_edge("Caldas", "Boyaca")<br />
+              G.add_edge("Caldas", "Cundinamarca")<br />
+              G.add_edge("Caldas", "Tolima")<br />
+              G.add_edge("Valle", "Quindio")<br />
+              G.add_edge("Valle", "Tolima")<br />
+              G.add_edge("Valle", "Cauca")<br />
+              G.add_edge("Huila", "Tolima")<br />
+              G.add_edge("Huila", "Cauca")<br />
+              G.add_edge("Santander", "Boyaca")<br />
+              G.add_edge("Santander", "Antioquia")<br />
+              G.add_edge("Quindio", "Tolima")<br />
+              G.add_edge("Quindio", "Caldas")<br />
+              G.add_edge("Cauca", "Tolima")<br />
+              G.add_edge("Cundinamarca", "Tolima")<br />
+              G.add_edge("Cundinamarca", "Boyaca")<br />
+              nx.draw(G, with_labels=True, ax=ax)<br />
+              <br />
+              camino = nx.shortest_path(G, "Antioquia", "Cauca")<br />
+              print("Recorrido más corto:", camino)<br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <div class="main">
+        <div class="first">
+          <div class="pilas">
+            <h2>Las listas</h2>
+            <br />
+            <p>
+              Consiste en una secuencia de nodos, en los que se guardan campos
+              de arbitrarios de una o dos referencias, enlaces o punteros. Una
+              lista enlazada es una estructura vacía, un elemento de información
+              y un enlace hacia una lista (un nodo), una lista puede cambiar de
+              tamaño, su ventaja fundamental es que son flexibles a la hora de
+              reorganizar sus elementos, pero esto conlleva a que se hace lento
+              a la hora de acceder a cualquier elemento.
+            </p>
+            <br />
+            <div class="mini-container">
+              <div class="first-time">
+                <h3>Ejemplo:</h3>
+                <br />
+                <p>
+                  El siguiente codigo es de una estructura de un grafo que
+                  permite navegar entre los departamentos presentados
+                  mostrandonos cual es el recorrido de uno a otro, en donde se
+                  atraviesen menos departamentos
+                </p>
+                <br />
+                <div class="images">
+                  <img
+                    class="picture-large"
+                    src="https://4.bp.blogspot.com/-kDoun4SlO9c/WCXJWtqRRBI/AAAAAAAAADA/ivcTlsIfv6QJROQMIbxUubsGgfn85yw1QCEw/s1600/Grafo+dirigido.png"
+                    alt=""
+                  />
+                  <div class="two-images">
+                    <img
+                      class="picture2"
+                      src="https://marzomates.webs.ull.es/wp-content/uploads/2020/12/telefon-1024x695.png"
+                      alt=""
+                    />
+
+                    <img
+                      class="picture3"
+                      src="https://tareaeducativa.com/wp-content/uploads/2020/02/350px-Complete-edge-coloring.svg.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="second">
+          <div class="code">
+            <p>
+              public class nodo {<br />
+              &nbsp; private Object elemento;<br />
+              &nbsp;private nodo siguiente;<br />
+              &nbsp;&nbsp; public nodo() {<br />
+              &nbsp;&nbsp; this(null,null);<br />
+              }<br />
+              &nbsp; public nodo(Object e, nodo n){<br />
+              &nbsp;&nbsp; elemento=e;<br />
+              &nbsp;&nbsp; siguiente=n;<br />
+              }<br />
+              &nbsp; Object getElemento(){<br />
+              &nbsp; return elemento;<br />
+              }&nbsp; nodo getSiguiente(){<br />
+              return siguiente;<br />
+              }&nbsp;<br />
+              &nbsp; void setElemento(Object nuevoelemento){<br />
+              &nbsp;&nbsp; elemento=nuevoelemento;<br />
+              }<br />
+              &nbsp;void setSiguiente(nodo nuevosiguiente){<br />
+              &nbsp;&nbsp;&nbsp; siguiente=nuevosiguiente;<br />
+              &nbsp;}<br />
+              }<br />
+              public class agrega {<br />
+              public static void main(String [] args){<br />
+              &nbsp;&nbsp; nodo p,q;<br />
+              &nbsp;&nbsp; p = new nodo("uno",null);<br />
+              &nbsp;&nbsp; q = new nodo();<br />
+              &nbsp;&nbsp; q.setElemento("dos");<br />
+              &nbsp;&nbsp; q.setSiguiente(p);<br />
+              &nbsp;&nbsp; p = q;<br />
+              &nbsp;&nbsp; q = new nodo();<br />
+              &nbsp;&nbsp; q.setElemento("tres");<br />
+              &nbsp;&nbsp; q.setSiguiente(p);<br />
+              &nbsp;&nbsp; p = q;<br />
+              &nbsp;&nbsp; while (q!=null){<br />
+              System.out.println(q.getElemento());<br />
+              System.out.println(q.toString());<br />
+              &nbsp;&nbsp; q=q.getSiguiente(); <br />
+              &nbsp;&nbsp;} <br />
+              &nbsp;} <br />
+              }
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bibliographies">
+      <h2>Bibliografía</h2>
+      <br />
+      <ul>
+        <li>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque ea
+          vero eos culpa voluptatem molestias minus praesentium, voluptates
+          doloribus distinctio repellat officiis beatae. Corrupti velit natus
+          itaque laudantium facere quae!
+        </li>
+        <br />
+        <li>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque ea
+          vero eos culpa voluptatem molestias minus praesentium, voluptates
+          doloribus distinctio repellat officiis beatae. Corrupti velit natus
+          itaque laudantium facere quae!
+        </li>
+        <br />
+        <li>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque ea
+          vero eos culpa voluptatem molestias minus praesentium, voluptates
+          doloribus distinctio repellat officiis beatae. Corrupti velit natus
+          itaque laudantium facere quae!
+        </li>
+        <br />
+        <li>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque ea
+          vero eos culpa voluptatem molestias minus praesentium, voluptates
+          doloribus distinctio repellat officiis beatae. Corrupti velit natus
+          itaque laudantium facere quae!
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
