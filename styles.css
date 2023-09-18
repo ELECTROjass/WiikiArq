@@ -19,6 +19,10 @@ body :not(.media) {
     text-align: center;
     font-size: 100px;
 }
+.names{
+    margin: 0 auto;
+    text-align: center;
+}
 .text-center{
     background-color: #151922;
     align-items: center;
@@ -27,8 +31,15 @@ body :not(.media) {
 }  
 .bibliographies{
     background-color: #151922;
-    padding: 5%;
+    padding: 3%;
     text-align: center;
+}
+.bibliographies ul{
+    background-color: #151922;
+    text-align: left;
+}
+.bibliographies a{
+    color:#E39FF6;
 }
 .mini-container{
     padding-left: 15px;
